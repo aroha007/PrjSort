@@ -49,7 +49,9 @@ public class TestClassArrayListSort {
 
 			@Override
 			public int compare(Member m1, Member m2) {
-				return m1.getMno()-(m2.getMno());
+				
+				// return m1.getMno()-m2.getMno();
+				 return m2.getMno()-m1.getMno();
 			}
 		});
 		dispList(mList);		
