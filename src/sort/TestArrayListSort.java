@@ -70,7 +70,7 @@ public class TestArrayListSort {
 		} );
 		dispName(names);
 		
-        // 내림차순		
+       /* // 내림차순		
 		Collections.sort(names, new Comparator<String>() {
 
 			@Override
@@ -78,6 +78,15 @@ public class TestArrayListSort {
 				return o2.compareTo(o1);
 			}
 		} );
+		*/ // 밑에식과 이 식은 같다
+		
+		/*
+		 Collections.sort(names, (o1, o2) -> {
+			 return o2.compareTo(o1);
+		 });
+		 */ // 밑에식과 이 식도 같다
+		
+		Collections.sort(names, (o1, o2) -> o2.compareTo(o1) );
 		dispName(names);
 	}
 	// 이름출력
