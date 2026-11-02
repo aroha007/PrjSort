@@ -45,6 +45,7 @@ public class TestClassArrayListSort {
 		);
 		
 		dispList(mList);		
+		/*
 		Collections.sort(mList, new Comparator<Member>() {
 
 			@Override
@@ -54,6 +55,8 @@ public class TestClassArrayListSort {
 				 return m2.getMno()-m1.getMno();
 			}
 		});
+		*/
+		Collections.sort(mList, (m1, m2) -> m2.getMno()-m1.getMno() );
 		dispList(mList);		
 	}
 
